@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micosoft Clone</title>
+    <link href="/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar flex justify-between items-center p-4 md:text-sm">
+        <div class="mobile1 flex space-x-3 items-center md:hidden">
+          <div class="hamburger cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+          <div class="search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="section1 flex space-x-9 items-center">
+          <div class="logo md:order-1">
+            <img class="h-6 lg:h-7" src="microsoft-logo.png" alt="logo" />
+          </div>
+          <div class="navLinks hidden md:flex space-x-2 order-2 lg:space-x-4">
+            <a class="hover:underline underline-offset-4 decoration-2" href="/"
+              >Microsoft 365</a
+            >
+            <a class="hover:underline underline-offset-4 decoration-2" href="/"
+              >Teams</a
+            >
+            <a class="hover:underline underline-offset-4 decoration-2" href="/"
+              >Windows</a
+            >
+            <a class="hover:underline underline-offset-4 decoration-2" href="/"
+              >Surface</a
+            >
+            <a class="hover:underline underline-offset-4 decoration-2" href="/"
+              >Xbox</a
+            >
+            <a class="hover:underline underline-offset-4 decoration-2" href="/"
+              >Support</a
+            >
+          </div>
+        </div>
+        <div class="mobile2 flex items-center space-x-3">
+          <div class="cart md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              class="bi bi-cart3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+              />
+            </svg>
+          </div>
+          <div class="user md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="section2 hidden md:flex space-x-4 items-center">
+          <div class="flex cursor-pointer items-center">
+            <span class="hover:underline underline-offset-4 decoration-2"
+              >All Microsoft</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 h-6 ml-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+          <div class="search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+          <div class="cart">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-cart3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+              />
+            </svg>
+          </div>
+          <div class="user">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Slider -->
+    <div class="slider">
+      <div
+        class="sliderMobile flex flex-col p-1 drop-shadow-md md:bg-[url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce-Word-Merch:VP4-1399x600')] md:h-[500px] md:bg-cover md:bg-center md:justify-center"
+      >
+        <img
+          class="md:hidden"
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce-Word-Merch:VP2-859x540"
+          alt="image"
+        />
+        <div class="bg-white p-6 md:w-96 md:ml-20 md:bg-transparent">
+          <h1 class="font-semibold text-2xl">Microsoft 365</h1>
+          <p class="mt-2">
+            Turn your ideas into reality, stay safer online and off, and focus
+            on what matters most with Microsoft 365 apps
+          </p>
+          <div class="md:flex md:space-x-4 md:items-center md:mt-4">
+            <button
+              class="bg-blue-500 p-2.5 font-semibold text-white rounded mt-2 block hover:bg-blue-700 md:mt-0"
+            >
+              For one person
+            </button>
+            <span
+              class="mt-4 text-blue-500 font-medium flex items-center md:mt-0"
+              >For up six people<svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card no.1 -->
+    <div class="my-8">
+      <div
+        class="flex flex-col font-medium text-blue-600 items-center md:flex-row md:justify-center md:space-x-10"
+      >
+        <div class="flex items-center flex-col mt-3">
+          <img
+            class="h-14 grayscale"
+            src="https://www.citypng.com/public/uploads/preview/windows-11-black-logo-icon-png-11663458867t0ypfck7fr.png?v=2023071409"
+            alt=""
+          />
+          <a class="underline cursor-pointer">Choose your Microsoft 365</a>
+        </div>
+        <div class="flex items-center flex-col mt-3">
+          <img
+            class="h-14"
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/surface-go2-link-list-120x120?wid=40&hei=40"
+            alt=""
+          />
+          <a class="underline cursor-pointer">Explore Surface devices</a>
+        </div>
+        <div class="flex items-center flex-col mt-3">
+          <img
+            class="h-14"
+            src="https://www.freeiconspng.com/uploads/xbox-icon-2.png"
+            alt=""
+          />
+          <a class="underline cursor-pointer">Explore Surface Devices</a>
+        </div>
+        <div class="flex items-center flex-col mt-3">
+          <img
+            class="h-14 grayscale"
+            src="https://www.citypng.com/public/uploads/preview/windows-11-black-logo-icon-png-11663458867t0ypfck7fr.png?v=2023071409"
+            alt=""
+          />
+          <a class="underline cursor-pointer">Get Windows 11</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card no.2 -->
+    <div
+      class="flex flex-col items-center md:flex-row md:h-auto md:space-x-5 md:mx-5"
+    >
+      <div class="card1 w-[350px] md:h-[500px]">
+        <img
+          class="w-full"
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-5-M1-Platinum-01-1?wid=297&hei=167&fit=crop"
+          alt=""
+        />
+        <h1 class="text-2xl font-semibold">Surface Laptop 5</h1>
+        <p class="text-justify text-sm mt-3">
+          Sophisticated style and multitasking speed powered by 12th Gen Intel®
+          Core, with Windows 11.
+        </p>
+        <div class="flex mt-5 text-blue-600 items-center text-sm font-semibold">
+          <p class="cursor-pointer">Learn More</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="card2 w-[350px] mt-12 md:mt-0 md:h-[500px]">
+        <img
+          class="w-full"
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSS-CP-Xbox-Series-S-Evergreen?wid=297&hei=167&fit=crop"
+          alt=""
+        />
+        <h1 class="text-2xl font-semibold">Xbox Series S</h1>
+        <p class="text-justify text-sm mt-3">
+          Next-gen performance in the smallest Xbox ever.
+        </p>
+        <div class="flex mt-5 text-blue-600 items-center text-sm font-semibold">
+          <p class="cursor-pointer">Shop Xbox Series S</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="card3 w-[350px] mt-12 md:mt-0 md:h-[500px]">
+        <img
+          class="w-full"
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Bing-AI-Open-Preview?wid=297&hei=167&fit=crop"
+          alt=""
+        />
+        <h1 class="text-2xl font-semibold">
+          Announcing the next wave of AI innovation
+        </h1>
+        <p class="text-justify text-sm mt-3">
+          The new Microsoft Bing and Edge will soon feature more visual search
+          responses, chat history, and persistent chat within Edge. We’re also
+          adding actions to help people complete tasks.
+        </p>
+        <div class="flex mt-5 text-blue-600 items-center text-sm font-semibold">
+          <p class="cursor-pointer">Learn more about it</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="card4 w-[350px] mt-12 md:mt-0 md:h-[500px]">
+        <img
+          class="w-full"
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XGP-Game-Pass-Ultimate-Characters-06102010-1?wid=297&hei=167&fit=crop"
+          alt=""
+        />
+        <h1 class="text-2xl font-semibold">Xbox Game Pass Ultimate</h1>
+        <p class="text-justify text-sm mt-3">
+          Xbox Live Gold and hundreds of high-quality console and PC games. Play
+          together with friends and discover your next favourite game.
+        </p>
+        <div class="flex mt-5 text-blue-600 items-center text-sm font-semibold">
+          <p class="cursor-pointer">Join now</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card no.3 -->
+    <div
+      class="mx-3 my-8 md:bg-[url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP4-1260x600')] md:h-[600px] md:mx-12 md:flex md:items-center md:px-24"
+    >
+      <img
+        class="md:hidden"
+        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP2-859x540"
+        alt=""
+      />
+      <div class="md:w-[400px]">
+        <h1 class="text-2xl font-semibold mt-7 md:text-white md:text-3xl">
+          Designed for life today - and tomorrow
+        </h1>
+        <p class="text-justify mt-2 md:text-white md:mt-4">
+          The next-generation of games. Your goals. Friends and family. Windows
+          11 was made to bring you closer to everything you love.
+        </p>
+        <button class="bg-blue-500 p-2 text-white mt-2 rounded md:mt-4">
+          see if your PC is ready
+        </button>
+      </div>
+    </div>
+
+    <!-- Social Links -->
+    <div
+      class="flex justify-center items-center space-x-8 md:justify-start md:mx-12"
+    >
+      <span class="text-xl font-semibold">Follow Microsoft</span>
+      <div class="flex space-x-5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          fill="currentColor"
+          class="bi bi-facebook"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          fill="currentColor"
+          class="bi bi-youtube"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          fill="currentColor"
+          class="bi bi-twitter"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Button for top -->
+    <div class="m-6 flex justify-end">
+      <button class="p-2 bg-gray-300 rounded">&uarr; Back to top</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="p-9 bg-slate-100 text-gray-500">
+      <div class="text-sm md:flex md:justify-between">
+        <div class="foot2 space-y-4 md:mt-0">
+          <h1 class="text-xl font-semibold">What's new</h1>
+          <p>Microsoft 365</p>
+          <p>Games</p>
+          <p>Surface Pro 9</p>
+          <p>Surface Laptop 5</p>
+          <p>Surface Laptop Studio</p>
+          <p>Surface Laptop Go 2</p>
+          <p>Windows 11 apps</p>
+        </div>
+        <div class="foot2 space-y-4 mt-8 md:mt-0">
+          <h1 class="text-xl font-semibold">Microsoft Store</h1>
+          <p>Account profile</p>
+          <p>Download Center</p>
+          <p>Microsoft Store Support</p>
+          <p>Returns</p>
+          <p>Order tracking</p>
+        </div>
+        <div class="foot3 space-y-4 mt-8 md:mt-0">
+          <h1 class="text-xl font-semibold">Education</h1>
+          <p>Microsoft in education</p>
+          <p>Devices for education</p>
+          <p>Microsoft Teams for Education</p>
+          <p>Microsoft 365 Education</p>
+          <p>Office Education</p>
+          <p>Educator training and development</p>
+          <p>Deals for students and parents</p>
+          <p>Azure for students</p>
+        </div>
+        <div class="foot4 space-y-4 mt-8 md:mt-0">
+          <h1 class="text-xl font-semibold">Developer & IT</h1>
+          <p>Developer Center</p>
+          <p>Documentation</p>
+          <p>Microsoft Learn</p>
+          <p>Microsoft Tech Community</p>
+          <p>Azure Marketplace</p>
+          <p>AppSource</p>
+          <p>Microsoft Power Platform</p>
+          <p>Visual Studio</p>
+        </div>
+      </div>
+      <div class="mt-6">
+        <div class="flex space-x-2 items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            class="bi bi-globe-americas"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"
+            />
+          </svg>
+          <span>English (India)</span>
+        </div>
+      </div>
+      <div class="flex justify-center items-center mt-10">
+        <h1>&copy; Microsoft 2023</h1>
+      </div>
+    </div>
+  </body>
+</html>

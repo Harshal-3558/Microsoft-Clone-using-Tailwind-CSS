@@ -20,3 +20,8 @@ git clone https://github.com/Harshal-3558/Microsoft-Clone-using-Tailwind-CSS.git
 cd microsoft-clone
 ```
 3. Open the index.html file in your preferred web browser to view the cloned Microsoft website.
+## Technologies Used
+
+- HTML5
+- Tailwind CSS
+

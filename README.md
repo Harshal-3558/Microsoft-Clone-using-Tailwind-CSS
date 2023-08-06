@@ -6,7 +6,7 @@ This repository contains a project where I recreated the Microsoft website using
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Watch the Video](https://drive.google.com/file/d/1sbSqNBBdzH4A3velh0kfSj3snk_R3CtG/view?usp=sharing)
 
 
 ## Installation and Usage

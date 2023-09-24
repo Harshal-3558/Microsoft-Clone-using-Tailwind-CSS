@@ -2,14 +2,7 @@
 This repository contains a project where I recreated the Microsoft website using Tailwind CSS. It showcases my skills in web development, particularly in front-end technologies and responsive design. In this project, I aimed to recreate the Microsoft website's front page using Tailwind CSS. This involved implementing responsive design principles to ensure that the website looks and functions well on various devices, including desktops, tablets, and mobile phones. By working on this project, I furthered my understanding of modern web development practices and improved my skills in HTML, CSS, and responsive design.
 
 ## Screenshots
-<<<<<<< HEAD
-=======
-
-
-https://github.com/Harshal-3558/Microsoft-Clone-using-Tailwind-CSS/assets/139840722/9b4471e1-4db9-48cf-806b-42684ecfafa9
-
-
->>>>>>> 309565afafcd5ec3cf79c06c390cf07473c974b6
+![Alt text](image.png)
 
 ## Installation and Usage
 1. Clone this repository to your local machine using :
